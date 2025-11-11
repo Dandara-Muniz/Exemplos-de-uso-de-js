@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+</head>
+<body>
+    <script>
+    var peso = prompt("Digite seu peso");
+    var altura = prompt("Digite sua altura");
+    var imc = peso/altura**2;
+    if( imc < 16)
+    {
+        console.log("Magreza grau III");
+    }
+    if( imc >= 16 && imc <= 16.9)
+    {
+        console.log("Magreza grau II");
+    }
+    if( imc >= 17 && imc <= 18.4)
+    {
+        console.log("Magreza grau I");
+    }
+    if( imc >= 18.5 && imc <= 24.9)
+    {
+        console.log("Eutrofia");
+    }
+    if( imc >= 25 && imc <= 29.9)
+    {
+        console.log("Pré-Obesidade");
+    }
+    if( imc >= 30 && imc <= 34.9)
+    {
+        console.log("Obesidade moderada (grau I)");
+    }
+     if( imc >= 35 && imc <= 39.9)
+    {
+        console.log("Obesidade severa (grau II)");
+    }
+     if( imc >= 40)
+    {
+        console.log("Obesidade muito severa (grau III)");
+    }
+    </script>
+</body>
+</html>
