@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade pelo nascimento</title>
+</head>
+<body>
+    <script>
+    var diaAtual= 13;
+    var mesAtual= 11;
+    var anoAtual= 2025;
+    var idade;
+
+    diaNascimento = prompt ("Digite o dia do seu nascimento");
+    diaNascimento = parseInt(diaNascimento);
+    mesNascimento = prompt ("Digite o mês do seu nascimento");
+    mesNascimento = parseInt(mesNascimento);
+    anoNascimento = prompt ("Digite o ano do seu nascimento");
+    anoNascimento = parseInt(anoNascimento);
+
+    if (mesAtual<mesNascimento)
+    {
+        idade =  anoAtual - anoNascimento;
+        idade = idade - 1;
+        console.log("você tem  " + idade + " ano(s)");
+    } 
+
+    if (mesAtual>mesNascimento)
+    {
+        idade =  anoAtual - anoNascimento;
+        console.log("você tem  " + idade + " ano(s)");
+    }
+
+    if (mesAtual==mesNascimento && diaAtual==diaNascimento)
+    {
+        idade =  anoAtual - anoNascimento;
+        console.log("você tem  " + idade + " ano(s)");
+    }
+
+    if (mesAtual==mesNascimento && diaAtual<diaNascimento)
+    {
+        idade =  anoAtual - anoNascimento;
+        idade = idade - 1;
+        console.log("você tem  " + idade + " ano(s)");
+    }
+
+    if (mesAtual==mesNascimento && diaAtual>diaNascimento)
+    {
+        idade =  anoAtual - anoNascimento;
+        console.log("você tem  " + idade + " ano(s)");
+    }
+    </script>
+</body>
+</html>
