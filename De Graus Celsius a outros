@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversão de graus</title>
+</head>
+<body>
+    <script>
+        var celsius = prompt ("Digite os graus celsius");
+        celsius = parseInt(celsius);
+
+    fahrenheit = (celsius * 1.8) + 32;
+    kelvin = celsius + 273.15;
+    console.log("fahrenheit: " + fahrenheit + "  &  " + "kelvin: " + kelvin);
+    </script>
+</body>
+</html>
