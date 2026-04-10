@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro exemplo de uso de jQuery</title>
+</head>
+<body style="background-color: rgb(255, 218, 218);">
+   <button id="meuBotao" style="margin-top: 2%; background-color: brown;color: #ffffff;">Esconder frases!</button>
+    <h3> <p id="hello">Hello, world :D</p> </h3>
+    <h3> <p id="ola">Meu primeiro código postado >_< </p> </h3>
+
+    
+    <button id="btn-trocar" style="margin-top: 4%;">Se estou indo bem, então da uma clicada aqui...</button>
+        <p id="frase-antiga"> </p>
+
+        
+ <script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+  $("button#meuBotao").fadeOut(800).fadeIn(950).fadeOut(800).fadeIn(950).fadeOut(800).fadeIn(950).fadeOut(800).fadeIn(950).fadeOut(800).fadeIn(950).fadeOut(800).fadeIn(950);css({
+    "width": "25%"
+  });
+});
+ $(document).ready(function(){
+  $("button#btn-trocar").css({
+    "width": "25%"
+  });
+});
+    $("#btn-trocar").click(function(){
+        $("#frase-antiga").hide(500, function() {
+            $(this).text("HAHA mensagem secreta, amei isso <3").show(500);
+        });
+    });
+  $(document).ready(function(){
+    $("#meuBotao").click(function(){
+      $("#hello").toggle();
+    });
+  });
+  $(document).ready(function(){
+    $("#meuBotao").click(function(){
+      $("#ola").toggle();
+    });
+  });
+</script>
+</body>
+</html>
